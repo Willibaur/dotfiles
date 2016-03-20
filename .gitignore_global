@@ -1,0 +1,9 @@
+#OS X Files
+.DS_Store
+Thumbs.db
+
+#dotenv
+.env
+
+bower_components/
+node_modules/

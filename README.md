@@ -18,3 +18,7 @@ Contains all settings for my zsh theme gnzh
 .gitignore_global
 -------
 Contains files to be ignored by default for Git
+
+atom
+----
+Contains atom packages preferences, snippets and configuration settings

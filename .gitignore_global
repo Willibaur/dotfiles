@@ -2,8 +2,14 @@
 .DS_Store
 Thumbs.db
 
-#dotenv
+#Dotenv
 .env
 
+#Bower
 bower_components/
+
+#Node
 node_modules/
+
+#IntelliJ
+.idea/

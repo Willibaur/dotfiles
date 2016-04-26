@@ -53,7 +53,7 @@ plugins=()
 
 # User configuration
 
-export PATH="$PATH:$HOME/.rvm/bin:/home/william/.rbenv/plugins/ruby-build/bin:/home/william/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/william/.rvm/bin:/home/william/.rvm/gems/ruby-2.2.3/bin:home/william/.rvm/gems/ruby-2.2.3/wrappers/rubocop"
+export PATH="$PATH:$HOME/.rvm/bin:/home/william/.rbenv/plugins/ruby-build/bin:/home/william/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/william/.rvm/bin:/home/william/.rvm/gems/ruby-2.2.3/bin:home/william/.rvm/gems/ruby-2.2.3/wrappers/rubocop:/usr/lib/gradle/gradle-2.13/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -98,7 +98,7 @@ alias gc="git commit -m"
 alias gac="git add . && git commit -m"
 alias gp="git push origin master"
 alias gpu="git pull"
-alias gr="gir remote"
+alias gr="git remote"
 alias gch="git checkout"
 alias gcl="git clone"
 alias gb="git branch"

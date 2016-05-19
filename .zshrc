@@ -55,6 +55,7 @@ plugins=()
 
 export PATH="$PATH:$HOME/.rvm/bin:/home/william/.rbenv/plugins/ruby-build/bin:/home/william/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/william/.rvm/bin:/home/william/.rvm/gems/ruby-2.2.3/bin:home/william/.rvm/gems/ruby-2.2.3/wrappers/rubocop:/usr/lib/gradle/gradle-2.13/bin"
 
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -89,6 +90,7 @@ alias initshell="source ~/.zshrc"
 
 # Terminal
 alias cl="echo -ne '\033c'"
+alias google="google-chrome"
 
 # Git
 alias gs="git status"
@@ -121,3 +123,5 @@ alias prt="echo -ne '\033c' && protractor test/e2e/conf.js"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 . `brew --prefix`/etc/profile.d/z.sh
+export PATH="/home/william/.linuxbrew/bin:$PATH"
+export PATH="/home/william/.linuxbrew/sbin:$PATH"

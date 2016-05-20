@@ -5,16 +5,18 @@
   autosave:
     enabled: true
   core:
+    autoHideMenuBar: true
     disabledPackages: [
       "autocomplete-html"
       "minimap-highlight-selected"
       "minimap"
       "linter-rubocop"
+      "auto-indent"
     ]
     packagesWithKeymapsDisabled: [
       "emmet"
     ]
-    projectHome: "/home/william/Dropbox/"
+    projectHome: "/home/william/Projects/"
     themes: [
       "atom-material-ui"
       "solarized-dark-syntax"
@@ -22,7 +24,6 @@
   editor:
     fontSize: 11
     invisibles: {}
-    softWrapAtPreferredLineLength: true
   emmet: {}
   "exception-reporting":
     userId: "d9562b65-7f31-18fe-5422-797c326d9a42"

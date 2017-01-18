@@ -28,9 +28,7 @@ fi
 
 local return_code="%(?..%F{red}%? ↵%f)"
 
-#local user_host="${PR_USER}%F{cyan}@${PR_HOST}"
-
-
+local user_host="${PR_USER}%F{cyan}@${PR_HOST}"
 local current_dir="%B%F{blue}%~%f%b"
 local rvm_ruby=''
 if ${HOME}/.rvm/bin/rvm-prompt &> /dev/null; then # detect user-local rvm installation
@@ -42,13 +40,11 @@ elif which rbenv &> /dev/null; then # detect Simple Ruby Version Management
 fi
 local git_branch='$(git_prompt_info)'
 
-# PROMPT="╭─${user_host} ${current_dir} ${git_branch}
-# ╰─$PR_PROMPT "
-# RPROMPT="${return_code}"
 
-PROMPT="________________________________________________________________________
+precmd() { print "" }
 
-╭─➤ ${current_dir} ${git_branch}
+PROMPT="╭─$PR_PROMPT ${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
+|
 ╰─$PR_PROMPT "
 RPROMPT="${return_code}"
 

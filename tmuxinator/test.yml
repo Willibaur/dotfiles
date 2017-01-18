@@ -50,6 +50,4 @@ windows:
         - cd employee && clear-term 
         - cd employee && clear-term 
   - Bash: 
-      layout: main-vertical 
-      panes: 
         - cd && clear-term

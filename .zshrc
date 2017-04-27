@@ -31,13 +31,16 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git z zsh-syntax-highlighting zsh-autosuggestions zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# Init tmuxinator
+source ~/.tmuxinator/tmuxinator.zsh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -68,15 +71,6 @@ fi
 
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
-alias muxkill="tmux kill-session -t sp"
-alias clear-term="echo -ne '\033c'"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-
-#Enable nvm
-source /usr/share/nvm/init-nvm.sh
-
-#Enable tmuxinator
-source ~/.tmuxinator/tmuxinator.zsh
 
 # Ruby - chruby (arch-linux)
 if [ -f  /usr/share/chruby/chruby.sh ]; then

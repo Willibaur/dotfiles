@@ -1,7 +1,7 @@
 # ~/.tmuxinator/sp.yml
 #
 name: sp
-root: ~/SmartPension
+root: ~/smartpension
 #
 # Runs before everything. Use it to start daemons etc.
 # pre: sudo /etc/rc.d/mysqld start

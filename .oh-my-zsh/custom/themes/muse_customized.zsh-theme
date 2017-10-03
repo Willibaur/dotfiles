@@ -1,4 +1,3 @@
-
 cal return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 setopt promptsubst

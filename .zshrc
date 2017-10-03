@@ -14,7 +14,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(bundler git web-search yarn z zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(bundler git web-search yarn z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,7 +36,7 @@ fi
 if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
   ssh-add
-fi
+fi 
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -51,6 +51,12 @@ fi
 
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+
+# Enable syntax-highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Enable autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable tmuxinator
 source ~/.tmuxinator/tmuxinator.zsh

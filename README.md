@@ -1,24 +1,21 @@
-# config-files
+# dotfiles
 
-This repo is intended for having a backup of my config files for my Linux
-machine, the actual distro is
-
-Linux Mint Debian Edition LMDE - Cinnamon
+This is  my set up for Arch Linux OS dotfiles.
 
 Files included here are:
 
 .zshrc
 ------
-Contains all settings for my zsh profile
+ZSH profile
 
-.gnzh.zsh-theme
-------
-Contains all settings for my zsh theme gnzh
+.oh-my-zsh
+----------
+Custom themes for oh-my-zsh
 
 .gitignore_global
--------
-Contains files to be ignored by default for Git
+-----------------
+Files to be ignored system wide by Git history
 
-atom
-----
-Contains atom packages preferences, snippets and configuration settings
+.tmux.configure
+---------------
+Tmux tweaks like mouse functionality, scroll, menu bar etc.

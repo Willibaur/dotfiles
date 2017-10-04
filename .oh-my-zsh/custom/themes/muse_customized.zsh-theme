@@ -1,4 +1,6 @@
-cal return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+#!/usr/bin/env zsh
+
+#cal return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 setopt promptsubst
 

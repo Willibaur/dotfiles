@@ -1,22 +1,24 @@
-# If you come from bash you might have to change your $PATH.
+#If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/home/willibaur/.gem/ruby/2.4.0/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/willibaur/.oh-my-zsh
+ZSH=/usr/share/oh-my-zsh/
 
-# Set name of the theme to load.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load. Optionally, if you set this to "random"
 ZSH_THEME="muse_customized"
-
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(bundler git web-search yarn z)
+plugins=(aliases blundler git web-search yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -48,15 +50,14 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-
+#
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
+# alias zshconfig="vim ~/.zshrc"
 
-# Enable syntax-highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Enable autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+if [[ ! -d $ZSH_CACHE_DIR ]]; then
+ mkdir $ZSH_CACHE_DIR
+fi
 
 # Enable tmuxinator
 source ~/.tmuxinator/tmuxinator.zsh
@@ -69,3 +70,5 @@ if [ -f  /usr/share/chruby/chruby.sh ]; then
   source /usr/share/chruby/chruby.sh
   source /usr/share/chruby/auto.sh
 fi
+
+source $ZSH/oh-my-zsh.sh

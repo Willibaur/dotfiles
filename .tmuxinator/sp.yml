@@ -20,12 +20,12 @@ root: ~/smartpension
 #
 windows:
   - WWW:
-      layout: main-vertical
+      layout: even-horizontal
       panes:
         - cd www && gb
         - cd www && clear
   - API:
-      layout: main-vertical
+      layout: even-horizontal
       panes:
         - cd api && docker restart mysql redis
         - cd api && clear && gb

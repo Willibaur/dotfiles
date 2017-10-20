@@ -17,7 +17,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(aliases blundler git web-search yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(aliases bundler git web-search yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
 
 # User configuration

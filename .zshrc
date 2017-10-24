@@ -59,6 +59,10 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
  mkdir $ZSH_CACHE_DIR
 fi
 
+# Enable compinstall
+autoload -Uz compinit
+compinit
+
 # Enable tmuxinator
 source ~/.tmuxinator/tmuxinator.zsh
 

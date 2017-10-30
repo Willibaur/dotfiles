@@ -17,7 +17,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(aliases bundler git web-search yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(aliases bundler git web-search yarn z)
 
 
 # User configuration
@@ -74,5 +74,9 @@ if [ -f  /usr/share/chruby/chruby.sh ]; then
   source /usr/share/chruby/chruby.sh
   source /usr/share/chruby/auto.sh
 fi
+
+# Enable zsh plugins
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh

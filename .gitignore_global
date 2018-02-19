@@ -46,3 +46,4 @@ node_modules/
 
 # Ruby #
 .ruby-version
+.tool-versions

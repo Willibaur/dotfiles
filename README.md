@@ -32,7 +32,7 @@ This is a guide for setting environment and dotfiles for a machine using Arch Li
 -   [ ] zsh-syntax-highlighting
 
 
-## Display manager
+### Display manager
 
 Change default Display Manager DM from lightdm to gdm
 
@@ -43,7 +43,7 @@ sudo systemctl enable gdm
 ```
 
 
-## ZSH
+### zsh
 
 Change you shell to **zsh** by default.
 
@@ -52,7 +52,7 @@ chsh -s `which zsh`
 ```
 
 
-## Git
+### Git
 
 Create **ssh** key for [Github](https://github.com/Willibaur) and set global configuration.
 
@@ -69,7 +69,7 @@ git config --global push.default current
 ```
 
 
-## asdf
+### asdf
 
 **asdf** is Version Package Manager to unify all your languages versions in one place, please double check which is the latest version [here](https://github.com/asdf-vm/asdf).
 

@@ -4,32 +4,32 @@ This is a guide for setting environment and dotfiles for a machine using Arch Li
 
 ## Web Development packages
 
--[] atom
--[] docker
--[] dropbox
--[] firefox-developer-edition
--[] eslint
--[] gimp
--[] heroku-cli
--[] inkscape
--[] keepassxc
--[] libreoffice
--[] mysql-clients
--[] mysql-workbench
--[] nginx
--[] ngrok
--[] oh-my-zsh
--[] peek
--[] pencil
--[] slack
--[] tidy-html5
--[] tig
--[] tmux
--[] vim
--[] yarn
--[] zsh
--[] zsh-autosuggestions
--[] zsh-syntax-highlighting
+-   [ ] atom
+-   [ ] docker
+-   [ ] dropbox
+-   [ ] firefox-developer-edition
+-   [ ] eslint
+-   [ ] gimp
+-   [ ] heroku-cli
+-   [ ] inkscape
+-   [ ] keepassxc
+-   [ ] libreoffice
+-   [ ] mysql-clients
+-   [ ] mysql-workbench
+-   [ ] nginx
+-   [ ] ngrok
+-   [ ] oh-my-zsh
+-   [ ] peek
+-   [ ] pencil
+-   [ ] slack
+-   [ ] tidy-html5
+-   [ ] tig
+-   [ ] tmux
+-   [ ] vim
+-   [ ] yarn
+-   [ ] zsh
+-   [ ] zsh-autosuggestions
+-   [ ] zsh-syntax-highlighting
 
 
 ## Display manager

@@ -1,36 +1,35 @@
 # dotfiles
-----------
 
 This is a guide for setting environment and dotfiles for a machine using Arch Linux (Antergos).
 
 ## Web Development packages
 
-[] atom
-[] docker
-[] dropbox
-[] firefox-developer-edition
-[] eslint
-[] gimp
-[] heroku-cli
-[] inkscape
-[] keepassxc
-[] libreoffice
-[] mysql-clients
-[] mysql-workbench
-[] nginx
-[] ngrok
-[] oh-my-zsh
-[] peek
-[] pencil
-[] slack
-[] tidy-html5
-[] tig
-[] tmux
-[] vim
-[] yarn
-[] zsh
-[] zsh-autosuggestions
-[] zsh-syntax-highlighting
+-[] atom
+-[] docker
+-[] dropbox
+-[] firefox-developer-edition
+-[] eslint
+-[] gimp
+-[] heroku-cli
+-[] inkscape
+-[] keepassxc
+-[] libreoffice
+-[] mysql-clients
+-[] mysql-workbench
+-[] nginx
+-[] ngrok
+-[] oh-my-zsh
+-[] peek
+-[] pencil
+-[] slack
+-[] tidy-html5
+-[] tig
+-[] tmux
+-[] vim
+-[] yarn
+-[] zsh
+-[] zsh-autosuggestions
+-[] zsh-syntax-highlighting
 
 
 ## Display manager
@@ -88,7 +87,6 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 
 # Dotfiles
-----------
 
 Now you have access to your Github account, so you can clone this **dotfiles** repository.
 

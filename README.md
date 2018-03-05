@@ -9,6 +9,7 @@ This is a guide for setting environment and dotfiles for a machine using Arch Li
 -   [ ] dropbox
 -   [ ] firefox-developer-edition
 -   [ ] eslint
+-   [ ] flameshot
 -   [ ] gimp
 -   [ ] heroku-cli
 -   [ ] inkscape

@@ -4,33 +4,10 @@ This is a guide for setting environment and dotfiles for a machine using Arch Li
 
 ## Web Development packages
 
--   [ ] atom
--   [ ] docker
--   [ ] dropbox
--   [ ] firefox-developer-edition
--   [ ] eslint
--   [ ] flameshot
--   [ ] gimp
--   [ ] heroku-cli
--   [ ] inkscape
--   [ ] keepassxc
--   [ ] libreoffice
--   [ ] mysql-clients
--   [ ] mysql-workbench
--   [ ] nginx
--   [ ] ngrok
--   [ ] oh-my-zsh
--   [ ] peek
--   [ ] pencil
--   [ ] slack
--   [ ] tidy-html5
--   [ ] tig
--   [ ] tmux
--   [ ] vim
--   [ ] yarn
--   [ ] zsh
--   [ ] zsh-autosuggestions
--   [ ] zsh-syntax-highlighting
+atom, calibre, docker, dropbox, firefox-developer-edition, eslint, flameshot,
+gimp, heroku-cli, inkscape, keepassxc, libreoffice, mysql-clients,
+mysql-workbench, nginx, ngrok, oh-my-zsh, peek, pencil, slack, tidy-html5, tig,
+tmux, vim, yarn, zsh, zsh-autosuggestions, zsh-syntax-highlighting
 
 
 ### Display manager
@@ -75,7 +52,7 @@ git config --global push.default current
 **asdf** is Version Package Manager to unify all your languages versions in one place, please double check which is the latest version [here](https://github.com/asdf-vm/asdf).
 
 ```sh
-git clone git@github.com:asdf-vm/asdf.git ~/.asdf --branch v0.4.2
+git clone git@github.com:asdf-vm/asdf.git ~/.asdf --branch v0.4.3
 ```
 
 Now you will need to install plugins required as per your need, **Ruby** and **NodeJS** will be installed now

@@ -109,6 +109,7 @@ ln -fsn ~/dotfiles/asdf/.asdfrc ~/.asdfrc
 ```sh
 ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_conf.txt ~/gnome_shell_extensions_conf.txt
 ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_id.txt ~/gnome_shell_extensions_id.txt
+ln -fsn ~/dotfiles/gnome/gtk.css ~/.config/gtk-3.0/gtk.css
 ```
 
 

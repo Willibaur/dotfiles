@@ -50,4 +50,4 @@ node_modules/
 
 # VS Code Editor #
 .vscode/
-jsonconfig.json
+jsconfig.json

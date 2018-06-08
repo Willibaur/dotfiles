@@ -60,7 +60,7 @@ Now you will need to install plugins required as per your need, **Ruby** and **N
 ```sh
 asdf plugin-add ruby
 asdf plugin-add nodejs
-bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+zsh ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 ```
 
 

@@ -19,6 +19,18 @@ root: ~/
 # startup_window: logs
 #
 windows:
+  - API:
+      layout: even-horizontal
+      panes:
+        - cd smartpension/api && docker restart mysql redis
+        - cd smartpension/api && clear && gb
+  - WWW:
+      layout: even-horizontal
+      panes:
+        - cd smartpension/www && gb
+        - cd smartpension/www && clear
+  - Bash:
+      - cd && clear
   - Study:
       layout: even-horizontal
       panes:
@@ -29,10 +41,8 @@ windows:
       panes:
         - cd open-source && clear
         - cd open-source && clear
-  - Dotfiles:
+  - Dotfiles: 
       layout: even-horizontal
       panes:
         - cd dotfiles && clear
         - cd dotfiles && clear
-  - Bash:
-      - clear

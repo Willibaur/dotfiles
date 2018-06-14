@@ -1,4 +1,5 @@
 [panel-osd]
+y-pos=100.0
 test-notification=false
 x-pos=29.699999999999999
 
@@ -18,7 +19,14 @@ require-pressure-to-show=false
 scroll-edges=['top', 'bottom']
 
 [clipboard-indicator]
+cache-only-favorites=true
 history-size=20
+notify-on-copy=false
 
 [auto-move-windows]
 application-list=['atom.desktop:1', 'org.gnome.Terminal.desktop:1', 'google-chrome.desktop:1', 'chromium.desktop:3', 'firefox-developer-edition.desktop:2']
+
+[better-osd]
+size=20
+horizontal=0
+vertical=22

@@ -26,6 +26,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Load the theme.
 antigen bundle ~/dotfiles/oh-my-zsh/custom/themes muse_customized.zsh-theme --no-local-clone
 
+# Load aliases.
+antigen bundle ~/dotfiles/oh-my-zsh/custom/plugins/aliases --no-local-clone
+
 # Tell Antigen that you're done.
 antigen apply
 

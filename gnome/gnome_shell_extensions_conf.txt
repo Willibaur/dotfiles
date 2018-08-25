@@ -1,22 +1,5 @@
-[panel-osd]
-y-pos=100.0
-test-notification=false
-x-pos=29.699999999999999
-
 [user-theme]
 name=''
-
-[dash-to-dock]
-apply-custom-theme=true
-multi-monitor=true
-dock-fixed=false
-preferred-monitor=0
-autohide-in-fullscreen=false
-intellihide-mode='ALL_WINDOWS'
-require-pressure-to-show=false
-
-[desktop-scroller]
-scroll-edges=['top', 'bottom']
 
 [clipboard-indicator]
 cache-only-favorites=true
@@ -26,7 +9,31 @@ notify-on-copy=false
 [auto-move-windows]
 application-list=['atom.desktop:1', 'org.gnome.Terminal.desktop:1', 'google-chrome.desktop:1', 'chromium.desktop:3', 'firefox-developer-edition.desktop:2']
 
+[panel-osd]
+y-pos=100.0
+force-expand=false
+test-notification=false
+x-pos=29.699999999999999
+
 [better-osd]
 size=20
 horizontal=0
 vertical=22
+
+[timepp]
+timer-fullscreen-monitor-pos=0
+alarms-fullscreen-monitor-pos=0
+pomodoro-fullscreen-monitor-pos=0
+stopwatch-fullscreen-monitor-pos=0
+
+[desktop-scroller]
+scroll-edges=['top', 'bottom']
+
+[dash-to-dock]
+apply-custom-theme=true
+multi-monitor=true
+dock-fixed=false
+preferred-monitor=0
+autohide-in-fullscreen=false
+intellihide-mode='ALL_WINDOWS'
+require-pressure-to-show=false

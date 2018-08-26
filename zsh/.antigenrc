@@ -1,0 +1,28 @@
+# Set Antigen as ZSH plugin manager
+source /usr/share/zsh/share/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle <<EOBUNDLES
+  bundler
+  git
+  yarn
+  z
+
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-history-substring-search
+  zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+ZSH_CUSTOM=$HOME/dotfiles/zsh/custom
+
+# Load the theme.
+antigen bundle $ZSH_CUSTOM/themes muse_customized.zsh-theme --no-local-clone
+
+# Load aliases.
+antigen bundle $ZSH_CUSTOM/plugins/aliases --no-local-clone
+
+# Tell Antigen that you're done.
+antigen apply

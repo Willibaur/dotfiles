@@ -8,31 +8,6 @@ COMPLETION_WAITING_DOTS="true"
 
 # User configuration
 
-# Set Antigen as ZSH plugin manager
-source /usr/share/zsh/share/antigen.zsh
-
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle bundler
-antigen bundle git
-antigen bundle yarn
-antigen bundle z
-
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Load the theme.
-antigen bundle ~/dotfiles/zsh/custom/themes muse_customized.zsh-theme --no-local-clone
-
-# Load aliases.
-antigen bundle ~/dotfiles/zsh/custom/plugins/aliases --no-local-clone
-
-# Tell Antigen that you're done.
-antigen apply
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'

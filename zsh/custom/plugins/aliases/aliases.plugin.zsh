@@ -9,7 +9,7 @@ alias gbdad='git branch | grep -v "develop" | xargs git branch -D'
 alias gbc='gcm && gbdam && clear && gl'
 
 # Server
-alias wwwkill='lsof -ti tcp:4567 | xargs kill -9'
+alias 3wkill='lsof -ti tcp:4567 | xargs kill -9'
 
 # Yarn
 alias yac="yarn autoclean"
@@ -22,4 +22,3 @@ alias yw="yarn why"
 
 # ZSH
 alias zshconfig='vim ~/.zshrc'
-alias ohmyzsh='vim ~/dotfiles/.oh-my-zsh/custom'

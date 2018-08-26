@@ -2,6 +2,10 @@
 
 This is a guide for setting environment and dotfiles for a machine using Arch Linux (Antergos).
 
+```sh
+git clone https://github.com/Willibaur/dotfiles ~/dotfiles
+```
+
 ## Web Development packages
 
 atom, calibre, docker, dropbox, firefox-developer-edition, eslint, flameshot,
@@ -77,7 +81,7 @@ git clone git@github.com:Willibaur/dotfiles.git ~/dotfiles
 
 ```sh
 rm -rf  ~/.zshrc
-ln -fsn ~/dotfiles/.zshrc ~/.zshrc
+ln -fsn ~/dotfiles/zsh/.zshrc ~/.zshrc
 ```
 
 
@@ -107,6 +111,7 @@ ln -fsn ~/dotfiles/asdf/.asdfrc ~/.asdfrc
 ## Gnome extensions
 
 ```sh
+ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_appfolder.txt ~/gnome_shell_extensions_appfolder.txt
 ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_conf.txt ~/gnome_shell_extensions_conf.txt
 ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_id.txt ~/gnome_shell_extensions_id.txt
 ln -fsn ~/dotfiles/gnome/gtk.css ~/.config/gtk-3.0/gtk.css
@@ -119,15 +124,16 @@ If you want to install ruby versions do:
 
 ```sh
 asdf install ruby 2.5.0
+asdf global ruby 2.5.0
 ```
 
 
 ### Known Ruby 2.3.X installation issues
 
 Ruby 2.3.X versions have known issues when installing in Arch due to openssl issues, 2.3.x
-versions do not support it only 2.4.X versions do that.
+versions do not support it, it is supported only from 2.4.X versions onward.
 
-For a clean and successfull installation, execute the following:
+For a clean and successful installation, execute the following:
 
 ```sh
 CC=gcc PKG_CONFIG_PATH=/usr/lib/openssl-1.0/pkgconfig RUBY_EXTRA_CONFIGURE_OPTIONS="--with-openssl-dir=/usr/lib/openssl-1.0" asdf install ruby 2.3.X

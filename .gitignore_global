@@ -17,6 +17,7 @@
 *.rar
 *.tar
 *.zip
+*.zwc
 
 # Logs and databases #
 *.log

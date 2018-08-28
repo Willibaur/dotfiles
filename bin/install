@@ -21,7 +21,7 @@ ssh-add ~/.ssh/id_rsa
 # Zsh
 chsh -s `which zsh`
 rm -rf  ~/.zshrc
-ln -fsn ~/dotfiles/.zshrc ~/.zshrc
+ln -fsn ~/dotfiles/zsh/.zshrc ~/.zshrc
 
 
 # Git

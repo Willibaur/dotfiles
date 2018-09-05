@@ -1,11 +1,25 @@
 #!/bin/bash
 
-# $1 => github email
+set -e
 
-git clone https://github.com/Willibaur/dotfiles ~/dotfiles-2
+# Dotfiles
+cd ~
+git clone https://github.com/Willibaur/dotfiles
+
+
+# Yay => AUR Package manager
+git clone https://aur.archlinux.org/yay.git ~/.yay
+cd .yay
+makepkg -si
+cd ~
 
 
 # Gnome
+sudo systemctl disable lightdm
+sudo pacman -S gdm
+sudo systemctl enable gdm
+sudo pacman -Rsn lightdm
+
 ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_appfolder.txt ~/gnome_shell_extensions_appfolder.txt
 ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_conf.txt ~/gnome_shell_extensions_conf.txt
 ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_id.txt ~/gnome_shell_extensions_id.txt
@@ -24,7 +38,13 @@ rm -rf  ~/.zshrc
 ln -fsn ~/dotfiles/zsh/.zshrc ~/.zshrc
 
 
+# Antigen
+yay -S antigen-git
+source ~/.zshrc
+
+
 # Git
+# $1 => github email
 ln -fsn ~/dotfiles/.gitignore_global ~/.gitignore_global
 
 git config --global core.editor vim
@@ -54,6 +74,11 @@ asdf install nodejs $NODE_VERSION
 asdf global nodejs $NODE_VERSION
 
 
+# Tmux
+ln -fsn ~/dotfiles/.tmux.conf  ~/.tmux.conf
+ln -fsn ~/dotfiles/tmuxinator ~/.tmuxinator
+
+
 # Docker
 sudo groupadd docker
 sudo gpasswd -a $USERNAME docker
@@ -65,9 +90,12 @@ systemctl start docker
 systemctl status docker
 docker ps
 
+
 # MySql
 mkdir ~/container-volumes
+pacman -S mysql-clients
 docker run -d --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v $HOME/container-volumes/mysql/datadir:/var/lib/mysql mysql:5.6
+
 
 # Redis
 docker run -d --name redis -p 6379:6379 redis

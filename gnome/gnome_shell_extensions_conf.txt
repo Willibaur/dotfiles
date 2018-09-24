@@ -1,3 +1,8 @@
+[web-search-dialog]
+open-web-search-dialog=['<Super>g']
+default-search-engine=1
+search-history-data='[{"query":"gnomeo and juliet","type":"QUERY"}]'
+
 [user-theme]
 name=''
 
@@ -20,14 +25,26 @@ size=20
 horizontal=0
 vertical=22
 
+[backup-tools]
+path='/home/willibaur/dotfiles/gnome/'
+
 [timepp]
 timer-fullscreen-monitor-pos=0
 alarms-fullscreen-monitor-pos=0
 pomodoro-fullscreen-monitor-pos=0
 stopwatch-fullscreen-monitor-pos=0
 
+[EasyScreenCast]
+input-audio-source=3
+width-rec=1920
+height-rec=1080
+y-pos=0
+x-pos=0
+area-screen=1
+
 [desktop-scroller]
 scroll-edges=['top', 'bottom']
+desktop-scroll=true
 
 [dash-to-dock]
 apply-custom-theme=true

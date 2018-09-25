@@ -54,3 +54,12 @@ preferred-monitor=0
 autohide-in-fullscreen=false
 intellihide-mode='ALL_WINDOWS'
 require-pressure-to-show=false
+
+[wallpaper-changer]
+purity-sketchy=true
+category-anime=true
+minutes=0
+provider='Wallhaven'
+category-people=true
+hours=1
+purity-nsfw=true

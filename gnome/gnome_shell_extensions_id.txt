@@ -17,8 +17,7 @@
 1144:Shortcuts@kyle.aims.ac.za
 906:sound-output-device-chooser@kgshank.net
 1064:System_Monitor@bghome.gmail.com
-1080:transparentnotification@ipaq3870
-19:user-theme@gnome-shell-extensions.gcampax.github.com
+1225:wallpaper-changer@jomik.org
 549:web_search_dialog@awamper.gmail.com
 10:windowsNavigator@gnome-shell-extensions.gcampax.github.com
 133:workspace-switcher-wrapAround@wrowclif.org

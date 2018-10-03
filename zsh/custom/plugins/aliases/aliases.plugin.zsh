@@ -6,7 +6,7 @@ alias at='atom .'
 # Git
 alias gbdam='git branch | grep -v "master" | xargs git branch -D'
 alias gbdad='git branch | grep -v "develop" | xargs git branch -D'
-alias gbc='gcm && gbdam && clear && gl'
+alias gbc='gcm && gbdam && gfa && clear && gl'
 
 # Server
 alias 3wkill='lsof -ti tcp:4567 | xargs kill -9'

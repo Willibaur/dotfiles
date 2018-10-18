@@ -11,6 +11,10 @@ alias gbc='gcm && gbdam && gfa && clear && gl'
 # Server
 alias 3wkill='lsof -ti tcp:4567 | xargs kill -9'
 
+# SP
+alias ft='rm -rf tmp/ clients/adviser/tmp clients/common/tmp clients/employee/tmp clients/employer/tmp clients/my/tmp'
+alias fn='rm -rf node_modules/'
+
 # Yarn
 alias yac="yarn autoclean"
 alias yga="yarn global add"

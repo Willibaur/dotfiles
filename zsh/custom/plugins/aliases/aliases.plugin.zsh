@@ -1,7 +1,8 @@
 # Custom Aliases
 
-# Atom
+# Code Editors
 alias at='atom .'
+alias vc='code .'
 
 # Git
 alias gbdam='git branch | grep -v "master" | xargs git branch -D'

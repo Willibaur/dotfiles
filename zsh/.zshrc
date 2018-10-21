@@ -38,4 +38,5 @@ source ~/.tmuxinator/tmuxinator.zsh
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
-export PATH="$(yarn global bin):$PATH"
+#export PATH="$(yarn global bin):$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

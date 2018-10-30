@@ -1,3 +1,14 @@
+[space-iflow-randomwallpaper]
+change-lock-screen=true
+history=['{"__caller__":null,"timestamp":1540882572115,"source":{"author":null,"authorUrl":null,"source":"Wallhaven","sourceUrl":"https://alpha.wallhaven.cc/","imageDownloadUrl":"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-65978.jpg","imageLinkUrl":"https://alpha.wallhaven.cc/wallpaper/65978"},"path":"/home/willibaur/.local/share/gnome-shell/extensions/randomwallpaper@iflow.space/wallpapers/1540882572116_wallhaven-65978.jpg","id":"1540882572116_wallhaven-65978.jpg"}', '{"__caller__":null,"timestamp":1540882398433,"source":{"author":null,"authorUrl":null,"source":"Wallhaven","sourceUrl":"https://alpha.wallhaven.cc/","imageDownloadUrl":"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-377350.jpg","imageLinkUrl":"https://alpha.wallhaven.cc/wallpaper/377350"},"path":"/home/willibaur/.local/share/gnome-shell/extensions/randomwallpaper@iflow.space/wallpapers/1540882398435_wallhaven-377350.jpg","id":"1540882398435_wallhaven-377350.jpg"}', '{"__caller__":null,"timestamp":1540879628875,"source":{"author":null,"authorUrl":null,"source":"Wallhaven","sourceUrl":"https://alpha.wallhaven.cc/","imageDownloadUrl":"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-138573.jpg","imageLinkUrl":"https://alpha.wallhaven.cc/wallpaper/138573"},"path":"/home/willibaur/.local/share/gnome-shell/extensions/randomwallpaper@iflow.space/wallpapers/1540879628876_wallhaven-138573.jpg","id":"1540879628876_wallhaven-138573.jpg"}', '{"__caller__":null,"timestamp":1540838445594,"source":{"author":null,"authorUrl":null,"source":"Wallhaven","sourceUrl":"https://alpha.wallhaven.cc/","imageDownloadUrl":"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-70684.jpg","imageLinkUrl":"https://alpha.wallhaven.cc/wallpaper/70684"},"path":"/home/willibaur/.local/share/gnome-shell/extensions/randomwallpaper@iflow.space/wallpapers/1540838445595_wallhaven-70684.jpg","id":"1540838445595_wallhaven-70684.jpg"}', '{"__caller__":null,"timestamp":1540838439434,"source":{"author":null,"authorUrl":null,"source":"Wallhaven","sourceUrl":"https://alpha.wallhaven.cc/","imageDownloadUrl":"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-674649.jpg","imageLinkUrl":"https://alpha.wallhaven.cc/wallpaper/674649"},"path":"/home/willibaur/.local/share/gnome-shell/extensions/randomwallpaper@iflow.space/wallpapers/1540838439436_wallhaven-674649.jpg","id":"1540838439436_wallhaven-674649.jpg"}']
+source='wallhaven'
+auto-fetch=true
+minutes=1
+timer-last-trigger=int64 1540882570700
+
+[space-iflow-randomwallpaper/wallhaven]
+category-people=false
+
 [web-search-dialog]
 open-web-search-dialog=['<Super>g']
 default-search-engine=1
@@ -10,6 +21,9 @@ name=''
 cache-only-favorites=true
 history-size=20
 notify-on-copy=false
+
+[switchWorkSpace]
+switch-workspace=['<Primary><Alt>Down']
 
 [auto-move-windows]
 application-list=['atom.desktop:1', 'org.gnome.Terminal.desktop:1', 'google-chrome.desktop:1', 'chromium.desktop:3', 'firefox-developer-edition.desktop:2']
@@ -47,13 +61,23 @@ scroll-edges=['top', 'bottom']
 desktop-scroll=true
 
 [dash-to-dock]
-apply-custom-theme=true
-multi-monitor=true
-dock-fixed=false
-preferred-monitor=0
 autohide-in-fullscreen=false
+dock-fixed=false
 intellihide-mode='ALL_WINDOWS'
+multi-monitor=true
+scroll-action='switch-workspace'
 require-pressure-to-show=false
+apply-custom-theme=true
+preferred-monitor=0
+
+[workspace-grid]
+wrap-to-same-scroll=false
+wraparound=true
+relative-workspace-switching=true
+scroll-direction='vertical'
+num-rows=3
+num-columns=1
+wrap-to-same=true
 
 [wallpaper-changer]
 purity-sketchy=true

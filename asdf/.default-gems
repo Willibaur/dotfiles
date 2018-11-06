@@ -1,4 +1,5 @@
 bundler
+bundle-audit
 rubocop
 solargraph
 tmuxinator

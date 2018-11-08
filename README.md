@@ -183,7 +183,7 @@ Install **mysql** dokcker image and instruct it to use your **container-volumes*
 used to store your data.
 
 ```sh
-docker run -d --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v /home/USERNAME/container-volumes/mysql/datadir:/var/lib/mysql mysql:5.6
+docker run -d --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v $HOME/container-volumes/mysql/datadir:/var/lib/mysql mysql:5.6
 ```
 
 Docker will complain about your **sql-client**, so you need to install **mysql-client** which will
@@ -194,6 +194,15 @@ options to be used as a client, you can select **mariadb-clients**.
 pacman -S mysql-clients
 ```
 
+
+## postgresql
+
+Same process for postgres
+
+```sh
+# PostgreSql
+docker run -d --name postgres -p 5432:5432 -v $HOME/container-volumes/postgres:/var/lib/postgresql/data postgres:11.0
+```
 
 ## Redis
 

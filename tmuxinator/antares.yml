@@ -1,6 +1,6 @@
-# ~/.tmuxinator/personal.yml
+# ~/.tmuxinator/antares.yml
 #
-name: personal
+name: antares
 root: ~/
 #
 # Runs before everything. Use it to start daemons etc.
@@ -41,8 +41,13 @@ windows:
       panes:
         - cd open-source && clear
         - cd open-source && clear
-  - Dotfiles: 
+  - Dotfiles:
       layout: even-horizontal
       panes:
         - cd dotfiles && clear
         - cd dotfiles && clear
+  - Side-Projects:
+      layout: even-horizontal
+      panes:
+        - cd side-projects && docker restart postgres
+        - cd side-projects && clear && gb

@@ -1,5 +1,4 @@
 15:alternate-tab@gnome-shell-extensions.gcampax.github.com
-6:apps-menu@gnome-shell-extensions.gcampax.github.com
 16:auto-move-windows@gnome-shell-extensions.gcampax.github.com
 1312:backup-tools@yahoo.com
 779:clipboard-indicator@tudmotu.com
@@ -8,20 +7,14 @@
 7:drive-menu@gnome-shell-extensions.gcampax.github.com
 442:drop-down-terminal@gs-extensions.zzrough.org
 690:EasyScreenCast@iacopodeenosee.gmail.com
-600:launch-new-instance@gnome-shell-extensions.gcampax.github.com
-18:native-window-placement@gnome-shell-extensions.gcampax.github.com
 708:panel-osd@berend.de.schouwer.gmail.com
 8:places-menu@gnome-shell-extensions.gcampax.github.com
 1040:randomwallpaper@iflow.space
 72:RecentItems@bananenfisch.net
-881:screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
 1144:Shortcuts@kyle.aims.ac.za
 906:sound-output-device-chooser@kgshank.net
 1064:System_Monitor@bghome.gmail.com
 19:user-theme@gnome-shell-extensions.gcampax.github.com
-1225:wallpaper-changer@jomik.org
 549:web_search_dialog@awamper.gmail.com
-10:windowsNavigator@gnome-shell-extensions.gcampax.github.com
 484:workspace-grid@mathematical.coffee.gmail.com
-133:workspace-switcher-wrapAround@wrowclif.org
 971:workspace_wraparound@crister.tk

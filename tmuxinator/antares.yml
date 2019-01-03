@@ -50,4 +50,4 @@ windows:
       layout: even-horizontal
       panes:
         - cd side-projects && docker restart postgres
-        - cd side-projects && clear && gb
+        - cd side-projects && clear

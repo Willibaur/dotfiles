@@ -1,5 +1,5 @@
 #If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -39,4 +39,4 @@ source ~/.tmuxinator/tmuxinator.zsh
 . $HOME/.asdf/completions/asdf.bash
 
 #export PATH="$(yarn global bin):$PATH"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH

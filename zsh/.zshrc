@@ -8,7 +8,7 @@ COMPLETION_WAITING_DOTS="true"
 ZSH_DIR=$HOME/dotfiles/zsh
 
 # Set Antigen as ZSH plugin manager
-source /usr/share/zsh/share/antigen.zsh
+source ~/antigen.zsh
 
 export ANTIGEN_COMPDUMP=$HOME/.zcompdump
 

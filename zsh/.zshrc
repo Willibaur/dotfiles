@@ -28,8 +28,16 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
 fi
 
 # Enable compinstall
+zstyle ':completion:*' completer _complete _ignored
+zstyle :compinstall filename '/home/willibaur/.zshrc'
+
 autoload -Uz compinit
 compinit
+
+HISTFILE=~/.histfile
+HISTSIZE=3000
+SAVEHIST=3000
+setopt autocd
 
 # Enable tmuxinator
 source ~/.tmuxinator/tmuxinator.zsh

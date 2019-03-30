@@ -25,16 +25,30 @@ sudo pacman -S gdm
 sudo systemctl enable gdm
 sudo pacman -Rsn lightdm
 
-ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_appfolder.txt ~/gnome_shell_extensions_appfolder.txt
-ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_conf.txt ~/gnome_shell_extensions_conf.txt
-ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_id.txt ~/gnome_shell_extensions_id.txt
-ln -fsn ~/dotfiles/gnome/gtk.css ~/.config/gtk-3.0/gtk.css
-
 
 # Keyring
 ssh-keygen -t rsa -b 4096 -C "$1"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
+
+
+# Git
+# $1 => github email
+
+git clone git@github.com:Willibaur/dotfiles.git
+
+ln -fsn ~/dotfiles/.gitignore_global ~/.gitignore_global
+
+git config --global core.editor vim
+git config --global core.excludesfile ~/.gitignore_global
+git config --global push.default current
+git config --global user.email "$1"
+git config --global user.name $(whoami)
+
+ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_appfolder.txt ~/gnome_shell_extensions_appfolder.txt
+ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_conf.txt ~/gnome_shell_extensions_conf.txt
+ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_id.txt ~/gnome_shell_extensions_id.txt
+ln -fsn ~/dotfiles/gnome/gtk.css ~/.config/gtk-3.0/gtk.css
 
 
 # Zsh
@@ -47,16 +61,6 @@ ln -fsn ~/dotfiles/zsh/.zshrc ~/.zshrc
 yay -S antigen-git
 source ~/.zshrc
 
-
-# Git
-# $1 => github email
-ln -fsn ~/dotfiles/.gitignore_global ~/.gitignore_global
-
-git config --global core.editor vim
-git config --global core.excludesfile ~/.gitignore_global
-git config --global push.default current
-git config --global user.email "$1"
-git config --global user.name "$USERNAME"
 
 
 # Asdf

@@ -5,8 +5,14 @@ set -e
 # Dotfiles
 cd ~
 
+# Development tools
+pacman -S calibre dbeaver docker docker-compose dropbox firefox firefox-developer-edition eslint flameshot
+pacman -S heroku-cli keepassxc mysql-clients
+pacman -S nginx ngrok oh-my-zsh peek pencil slack tig
+pacman -S tmux vim visual-studio-code-bin yarn zsh zsh-autosuggestions zsh-syntax-highlighting
 
-# Yay => AUR Package manager
+
+# Yay => AUR Package manager if pacman is not available
 git clone https://aur.archlinux.org/yay.git ~/.yay
 cd .yay
 makepkg -si

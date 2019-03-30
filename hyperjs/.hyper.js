@@ -6,20 +6,19 @@ module.exports = {
   config: {
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
-    updateChannel: "canary",
+    updateChannel: "stable",
 
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 9,
 
     // font family with optional fallbacks
-    fontFamily:
-      'Fira, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: "Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace",
 
-    // default font weight: 'normal' or 'bold'
+    // default font weight: "normal" or "bold"
     fontWeight: "normal",
 
     // font weight for bold characters: 'normal' or 'bold'
-    fontWeightBold: "bold",
+    fontWeightBold: "normal",
 
     // line height as a relative unit
     lineHeight: 1,
@@ -37,7 +36,7 @@ module.exports = {
     cursorShape: "BLOCK",
 
     // set to `true` (without backticks and without quotes) for blinking cursor
-    cursorBlink: false,
+    cursorBlink: "",
 
     // color of the text
     foregroundColor: "#fff",
@@ -68,9 +67,9 @@ module.exports = {
     showWindowControls: "",
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: "12px 14px",
+    padding: "12px 14px 24px",
 
-    // the full list. if you're going to provide the full color palette,
+    // the full list. if you"re going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
@@ -78,7 +77,7 @@ module.exports = {
       red: "#C51E14",
       green: "#1DC121",
       yellow: "#C7C329",
-      blue: "#0A2FC4",
+      blue: "0056AB",
       magenta: "#C839C5",
       cyan: "#20C5C6",
       white: "#C7C7C7",
@@ -93,10 +92,10 @@ module.exports = {
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
+    // if left empty, your system"s login shell will be used by default
     //
     // Windows
-    // - Make sure to use a full path if the binary name doesn't work
+    // - Make sure to use a full path if the binary name doesn"t work
     // - Remove `--login` in shellArgs
     //
     // Bash on Windows
@@ -127,31 +126,18 @@ module.exports = {
     // quickEdit: true,
 
     // URL to custom bell
-    // bellSoundURL: 'http://example.com/bell.mp3',
+    // bellSoundURL: "http://example.com/bell.mp3",
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
 
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
   plugins: [
-    "gitrocket",
-    "hyperpower",
+    "git-falcon9",
     "hyper-highlight-active-pane",
-    "hyperterm-visor",
-    "space-pull",
+    "hyperline",
+    "hyperpower",
   ],
 
-  visor: {
-    hotkey: "Control+Shift+Z",
-    position: "top", // or left, right, bottom
-    width: 200, // Optional, defaults to half of viewable area for horizontal positions, 100% for vertical
-    height: 900, // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
-  },
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
@@ -159,6 +145,6 @@ module.exports = {
 
   keymaps: {
     // Example
-    // 'window:devtools': 'cmd+alt+o',
+    // "window:devtools": "cmd+alt+o",
   },
 };

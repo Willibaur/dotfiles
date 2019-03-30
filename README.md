@@ -8,7 +8,7 @@ git clone https://github.com/Willibaur/dotfiles ~/dotfiles
 
 ## Web Development packages
 
-atom, calibre, docker, dropbox, firefox-developer-edition, eslint, flameshot,
+calibre, docker, dropbox, firefox, firefox-developer-edition, eslint, flameshot,
 gimp, heroku-cli, inkscape, keepassxc, libreoffice, mysql-clients,
 mysql-workbench, nginx, ngrok, oh-my-zsh, peek, pencil, slack, tidy-html5, tig,
 tmux, vim, yarn, zsh, zsh-autosuggestions, zsh-syntax-highlighting

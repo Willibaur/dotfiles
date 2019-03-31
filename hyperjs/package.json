@@ -9,7 +9,10 @@
   "dependencies": {
     "git-falcon9": "latest",
     "hyper-highlight-active-pane": "latest",
+    "hyper-sync-settings": "latest",
     "hyperline": "latest",
-    "hyperpower": "latest"
+    "hyperpower": "latest",
+    "hyperterm-visor": "latest",
+    "hyperterm-dibdabs": "latest"
   }
 }

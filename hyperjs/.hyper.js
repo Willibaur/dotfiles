@@ -4,26 +4,12 @@
 
 module.exports = {
   config: {
-    // choose either `'stable'` for receiving highly polished,
-    // or `'canary'` for less polished but more frequent updates
     updateChannel: "stable",
-
-    // default font size in pixels for all tabs
     fontSize: 9,
-
-    // font family with optional fallbacks
     fontFamily: "Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace",
-
-    // default font weight: "normal" or "bold"
     fontWeight: "normal",
-
-    // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: "normal",
-
-    // line height as a relative unit
     lineHeight: 1,
-
-    // letter spacing as a relative unit
     letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
@@ -94,20 +80,11 @@ module.exports = {
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system"s login shell will be used by default
     //
-    // Windows
-    // - Make sure to use a full path if the binary name doesn"t work
-    // - Remove `--login` in shellArgs
-    //
-    // Bash on Windows
-    // - Example: `C:\\Windows\\System32\\bash.exe`
-    //
-    // PowerShell on Windows
-    // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
     shell: "",
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
-    shellArgs: ["--login"],
+    shellArgs: [ "--login" ],
 
     // for environment variables
     env: {},
@@ -115,8 +92,7 @@ module.exports = {
     // set to `false` for no bell
     bell: "SOUND",
 
-    // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
-    copyOnSelect: false,
+    copyOnSelect: true,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
     defaultSSHApp: true,
@@ -129,13 +105,41 @@ module.exports = {
     // bellSoundURL: "http://example.com/bell.mp3",
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+
+
+    hyperline: {
+      plugins: [
+        "cpu",
+        "memory",
+        "network",
+        "hostname",
+        "ip",
+      ]
+    },
+
+    syncSettings: {
+      quiet: false,
+      accelerators: {
+        checkForUpdates: 'CmdOrCtrl+8'
+      }
+    },
+
+    visor: {
+      hotkey: 'Super+Alt+Space',
+      position: 'bottom', // or left, right, bottom
+      width: 900,  // Optional, defaults to half of viewable area for horizontal positions, 100% for vertical
+      height: 900, // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
+    },
   },
 
   plugins: [
     "git-falcon9",
     "hyper-highlight-active-pane",
+    "hyper-sync-settings",
     "hyperline",
     "hyperpower",
+    "hyperterm-visor",
+    "hyperterm-dibdabs",
   ],
 
   // in development, you can create a directory under

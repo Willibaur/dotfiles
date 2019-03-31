@@ -6,10 +6,11 @@ set -e
 cd ~
 
 # Development tools
-pacman -S calibre dbeaver docker docker-compose dropbox firefox firefox-developer-edition eslint flameshot
-pacman -S heroku-cli keepassxc mysql-clients
+pacman -S calibre dbeaver docker docker-compose dropbox eslint
+pacman -S firefox firefox-developer-edition flameshot font-manager
+pacman -S heroku-cli hyper keepassxc mysql-clients nodejs-emojione
 pacman -S nginx ngrok oh-my-zsh peek pencil slack tig
-pacman -S tmux vim visual-studio-code-bin yarn zsh zsh-autosuggestions zsh-syntax-highlighting
+pacman -S tmux visual-studio-code-bin yarn zsh zsh-autosuggestions zsh-syntax-highlighting
 
 
 # Yay => AUR Package manager if pacman is not available
@@ -24,6 +25,16 @@ sudo systemctl disable lightdm
 sudo pacman -S gdm
 sudo systemctl enable gdm
 sudo pacman -Rsn lightdm
+
+
+# Settings for HyperJS
+touch ~/.hyper_plugins/.hyper-sync-settings.json
+echo "{
+  "gistId": "",
+  "personalAccessToken" : ""
+}" > .hyper-sync-settings.json
+ln -fsn ~/dotfiles/hyperjs/.hyper.js ~/.hyper.js
+ln -fsn ~/dotfiles/hyperjs/package.json ~/.hyper_plugins/package.json
 
 
 # Keyring
@@ -58,9 +69,8 @@ ln -fsn ~/dotfiles/zsh/.zshrc ~/.zshrc
 
 
 # Antigen
-yay -S antigen-git
+curl -L git.io/antigen > ~/antigen.zsh
 source ~/.zshrc
-
 
 
 # Asdf
@@ -71,10 +81,13 @@ ln -fsn ~/dotfiles/asdf/.default-gems ~/.default-gems
 
 asdf plugin-add ruby
 asdf plugin-add nodejs
-zsh ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
-RUBY_VERSION=2.5.1
-NODE_VERSION=8.11.4
+# install rubygems
+gem update --system
+
+RUBY_VERSION=2.6.1
+NODE_VERSION=10.15.0
 
 asdf install ruby $RUBY_VERSION
 asdf global ruby $RUBY_VERSION
@@ -90,7 +103,7 @@ ln -fsn ~/dotfiles/tmuxinator ~/.tmuxinator
 
 # Docker
 sudo groupadd docker
-sudo gpasswd -a $USERNAME docker
+sudo gpasswd -a $(whoami) docker
 newgrp docker
 
 docker ps
@@ -100,7 +113,7 @@ systemctl status docker
 docker ps
 
 # Container for saving data
-mkdir ~/container-volumes
+mkdir ~/container-volumes ~/open-source ~/side-projects  ~/study
 
 # MySql
 pacman -S mysql-clients
@@ -111,3 +124,4 @@ docker run -d --name postgres -p 5432:5432 -v $HOME/container-volumes/postgres:/
 
 # Redis
 docker run -d --name redis -p 6379:6379 redis
+

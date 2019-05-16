@@ -63,7 +63,7 @@ module.exports = {
       red: "#C51E14",
       green: "#1DC121",
       yellow: "#C7C329",
-      blue: "0056AB",
+      blue: "#0056AB",
       magenta: "#C839C5",
       cyan: "#20C5C6",
       white: "#C7C7C7",
@@ -127,7 +127,7 @@ module.exports = {
     visor: {
       hotkey: 'Super+Alt+Space',
       position: 'bottom', // or left, right, bottom
-      width: 900,  // Optional, defaults to half of viewable area for horizontal positions, 100% for vertical
+      // width: 1500,   Optional, defaults to half of viewable area for horizontal positions, 100% for vertical
       height: 900, // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
     },
   },

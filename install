@@ -9,8 +9,14 @@ cd ~
 pacman -S calibre dbeaver docker docker-compose dropbox eslint
 pacman -S firefox firefox-developer-edition flameshot font-manager
 pacman -S heroku-cli hyper keepassxc mysql-clients nodejs-emojione
-pacman -S nginx ngrok oh-my-zsh peek pencil slack tig
-pacman -S tmux visual-studio-code-bin yarn zsh zsh-autosuggestions zsh-syntax-highlighting
+pacman -S nginx ngrok oh-my-zsh peek pencil slack tig tmux
+pacman -S typescript visual-studio-code-bin yarn zsh zsh-autosuggestions zsh-syntax-highlighting
+
+
+# Keyring
+ssh-keygen -t rsa -b 4096 -C "YOUR-GITHUB-EMAIL"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
 
 
 # Yay => AUR Package manager if pacman is not available
@@ -36,11 +42,6 @@ echo "{
 ln -fsn ~/dotfiles/hyperjs/.hyper.js ~/.hyper.js
 ln -fsn ~/dotfiles/hyperjs/package.json ~/.hyper_plugins/package.json
 
-
-# Keyring
-ssh-keygen -t rsa -b 4096 -C "$1"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
 
 
 # Git
@@ -68,6 +69,11 @@ rm -rf  ~/.zshrc
 ln -fsn ~/dotfiles/zsh/.zshrc ~/.zshrc
 
 
+# Tmux
+ln -fsn ~/dotfiles/.tmux.conf  ~/.tmux.conf
+ln -fsn ~/dotfiles/tmuxinator ~/.tmuxinator
+
+
 # Antigen
 curl -L git.io/antigen > ~/antigen.zsh
 source ~/.zshrc
@@ -86,8 +92,10 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 # install rubygems
 gem update --system
 
-RUBY_VERSION=2.6.1
+ELIXIR_VERSION=
+ERLANG_VERSION=22.0.1
 NODE_VERSION=10.15.0
+RUBY_VERSION=2.6.3
 
 asdf install ruby $RUBY_VERSION
 asdf global ruby $RUBY_VERSION
@@ -95,10 +103,11 @@ asdf global ruby $RUBY_VERSION
 asdf install nodejs $NODE_VERSION
 asdf global nodejs $NODE_VERSION
 
+asdf install erlang $ERLANG_VERSION
+asdf global erlang $ERLANG_VERSION
 
-# Tmux
-ln -fsn ~/dotfiles/.tmux.conf  ~/.tmux.conf
-ln -fsn ~/dotfiles/tmuxinator ~/.tmuxinator
+asdf install elixir $ELIXIR_VERSION
+asdf global elixir $ELIXIR_VERSION
 
 
 # Docker
@@ -124,4 +133,3 @@ docker run -d --name postgres -p 5432:5432 -v $HOME/container-volumes/postgres:/
 
 # Redis
 docker run -d --name redis -p 6379:6379 redis
-

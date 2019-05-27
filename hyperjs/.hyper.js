@@ -5,7 +5,7 @@
 module.exports = {
   config: {
     updateChannel: "stable",
-    fontSize: 9,
+    fontSize: 7,
     fontFamily: "Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace",
     fontWeight: "normal",
     fontWeightBold: "normal",
@@ -105,7 +105,6 @@ module.exports = {
     // bellSoundURL: "http://example.com/bell.mp3",
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-
 
     hyperline: {
       plugins: [

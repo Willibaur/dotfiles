@@ -106,6 +106,10 @@ module.exports = {
 
     // for advanced config flags please refer to https://hyper.is/#cfg
 
+    hypercwd: {
+     initialWorkingDirerctory:"~/smartpension"
+    },
+
     hyperline: {
       plugins: [
         "cpu",
@@ -135,6 +139,7 @@ module.exports = {
     "git-falcon9",
     "hyper-highlight-active-pane",
     "hyper-sync-settings",
+    "hypercwd",
     "hyperline",
     "hyperpower",
     "hyperterm-visor",

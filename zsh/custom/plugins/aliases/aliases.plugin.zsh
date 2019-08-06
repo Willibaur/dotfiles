@@ -10,18 +10,18 @@ alias gbdad='git branch | grep -v "develop" | xargs git branch -D'
 alias gbc='gcm && gbdam && gfa && clear && gl'
 alias gbcn="git branch | grep \* | cut -d ' ' -f2"
 
-# Hub
-alias hprm="hub pr list -b master -f '%sC%>(8)%i %Cyellow%<(10)%au %Cgreen%<(15)%L %Creset%<(70)%t %Cyellow%>(50)%U %n'"
 
 # Server
-alias 3wkill='lsof -ti tcp:4567 | xargs kill -9'
+alias killport='lsof -ti tcp:$1 | xargs kill -9'
+
 
 # SP
-alias ft='rm -rf tmp/ clients/adviser/tmp clients/common/tmp clients/employee/tmp clients/employer/tmp clients/my/tmp'
-alias fn='rm -rf node_modules/'
+alias ft='rm -rf tmp/ clients/*/tmp'
+alias fn='rm -rf node_modules/ clients/*/node_modules'
 
 # Yarn
 alias yac="yarn autoclean"
+alias yalh='yarn audit --level high'
 alias yga="yarn global add"
 alias ygr="yarn global remove"
 alias yi="yarn init"

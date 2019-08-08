@@ -6,7 +6,8 @@ module.exports = {
   config: {
     updateChannel: "stable",
     fontSize: 7,
-    fontFamily: "Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace",
+    fontFamily:
+      "Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace",
     fontWeight: "normal",
     fontWeightBold: "normal",
     lineHeight: 1,
@@ -74,7 +75,7 @@ module.exports = {
       lightBlue: "#6A76FB",
       lightMagenta: "#FD7CFC",
       lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF",
+      lightWhite: "#FFFFFF"
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -84,7 +85,7 @@ module.exports = {
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
-    shellArgs: [ "--login" ],
+    shellArgs: ["--login"],
 
     // for environment variables
     env: {},
@@ -107,43 +108,64 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
 
     hypercwd: {
-     initialWorkingDirerctory:"~/smartpension"
+      initialWorkingDirerctory: "~/"
     },
 
     hyperline: {
-      plugins: [
-        "cpu",
-        "memory",
-        "network",
-        "hostname",
-        "ip",
-      ]
+      plugins: ["cpu", "memory", "network", "hostname", "ip"]
+    },
+
+    paneNavigation: {
+      debug: false,
+      hotkeys: {
+        navigation: {
+          up: "ctrl+shift+up",
+          down: "ctrl+shift+down",
+          left: "ctrl+shift+left",
+          right: "ctrl+shift+right"
+        },
+        jump_prefix: "ctrl+shift", // completed with 1-9 digits
+        permutation_modifier: "shift", // Added to jump and navigation hotkeys for pane permutation
+        maximize: "meta+enter"
+      },
+      showIndicators: true, // Show pane number
+      indicatorPrefix: "Terminal-", // Will be completed with pane number
+      indicatorStyle: {
+        // Added to indicator <div>
+        position: "absolute",
+        top: 0,
+        left: 0,
+        fontSize: "10px",
+      },
+      focusOnMouseHover: true,
+      inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
     },
 
     syncSettings: {
       quiet: false,
       accelerators: {
-        checkForUpdates: 'CmdOrCtrl+8'
+        checkForUpdates: "CmdOrCtrl+8"
       }
     },
 
     visor: {
-      hotkey: 'Super+Alt+Space',
-      position: 'bottom', // or left, right, bottom
+      hotkey: "Super+Alt+Space",
+      position: "bottom", // or left, right, bottom
       // width: 1500,   Optional, defaults to half of viewable area for horizontal positions, 100% for vertical
-      height: 900, // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
-    },
+      height: 900 // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal
+    }
   },
 
   plugins: [
     "git-falcon9",
     "hyper-highlight-active-pane",
+    "hyper-pane",
     "hyper-sync-settings",
     "hypercwd",
     "hyperline",
     "hyperpower",
     "hyperterm-visor",
-    "hyperterm-dibdabs",
+    "hyperterm-dibdabs"
   ],
 
   // in development, you can create a directory under
@@ -154,5 +176,5 @@ module.exports = {
   keymaps: {
     // Example
     // "window:devtools": "cmd+alt+o",
-  },
+  }
 };

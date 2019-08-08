@@ -9,6 +9,7 @@
   "dependencies": {
     "git-falcon9": "latest",
     "hyper-highlight-active-pane": "latest",
+    "hyper-pane": "latest",
     "hyper-sync-settings": "latest",
     "hypercwd": "latest",
     "hyperline": "latest",

@@ -22,32 +22,13 @@ windows:
   - API:
       layout: even-horizontal
       panes:
-        - cd smartpension/api && docker restart mysql redis
+        - cd smartpension/api && docker restart mysql redis && docker ps
         - cd smartpension/api && clear && gb
-  - WWW:
-      layout: even-horizontal
-      panes:
-        - cd smartpension/www && gb
-        - cd smartpension/www && clear
-  - Bash:
-      - cd && clear
-  - Study:
-      layout: even-horizontal
-      panes:
-        - cd study && clear
-        - cd study && clear
-  - Open-Source:
-      layout: even-horizontal
-      panes:
-        - cd open-source && clear
-        - cd open-source && clear
-  - Dotfiles:
-      layout: even-horizontal
-      panes:
-        - cd dotfiles && clear
-        - cd dotfiles && clear
+        - cd smartpension/api && rm -rf tmp && yst
+
   - Side-Projects:
       layout: even-horizontal
       panes:
-        - cd side-projects && docker restart postgres
+        - cd side-projects && docker ps
+        - cd side-projects && clear && l
         - cd side-projects && clear

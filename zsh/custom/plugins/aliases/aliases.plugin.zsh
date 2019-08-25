@@ -21,6 +21,7 @@ alias fn='rm -rf node_modules/ clients/*/node_modules'
 
 # Yarn
 alias yac="yarn autoclean"
+alias yc="yarn create"
 alias yalh='yarn audit --level high'
 alias yga="yarn global add"
 alias ygr="yarn global remove"

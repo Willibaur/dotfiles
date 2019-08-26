@@ -41,7 +41,8 @@ echo "{
 }" > .hyper-sync-settings.json
 ln -fsn ~/dotfiles/hyperjs/.hyper.js ~/.hyper.js
 ln -fsn ~/dotfiles/hyperjs/package.json ~/.hyper_plugins/package.json
-
+ln -fsn ~/dotfiles/hyperjs/node_modules ~/.hyper_plugins/node_modules
+ln -fsn ~/dotfiles/hyperjs/yarn.lock ~/.hyper_plugins/yarn.lock
 
 
 # Git

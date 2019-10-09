@@ -440,7 +440,7 @@ dns-socket@^1.6.2:
   dependencies:
     dns-packet "^1.1.0"
 
-dugite@^1.87.0:
+dugite@^1.87.2:
   version "1.87.2"
   resolved "https://registry.yarnpkg.com/dugite/-/dugite-1.87.2.tgz#a7ef3d3a43abeb9d11971c830ae7cb833c620698"
   integrity sha512-5IHQgx/KS3RwIEzcpkyjVpQoef78Lw5f/TCjaGItuTpDIz4k+4Ju+ZfcdOO701w93WturxKYNArU+jcMSTUGHw==
@@ -821,12 +821,12 @@ hyper-pane@latest:
   dependencies:
     lodash.merge "^4.6.0"
 
-hyper-sync-settings@latest:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/hyper-sync-settings/-/hyper-sync-settings-3.0.2.tgz#71bade8dfce58db371183c411ec303762d843245"
-  integrity sha512-+c2NZ0jio8I8aQNGYu+Fuct0kxVLp+Z9cDbVRlnMT1V1CeKMvRGr+zp1Y6/qaCxCRLDOGdKoYZPgHwqAj3vWzQ==
+hyper-sync-settings@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/hyper-sync-settings/-/hyper-sync-settings-3.0.4.tgz#74d8daa439941f869fdf3bfaf72d82f8a0d2a0b3"
+  integrity sha512-UddT6in8I+Pq7t6Ppg0W03nSfq1o6dFZiIlhzCZwwDIHbxwo4Y799qUQ5gw+T73T/qcyO2W8c/wtOUIBmo5Nwg==
   dependencies:
-    dugite "^1.87.0"
+    dugite "^1.87.2"
     fs-extra "^8.1.0"
     moment "^2.24.0"
 

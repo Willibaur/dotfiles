@@ -821,7 +821,7 @@ hyper-pane@latest:
   dependencies:
     lodash.merge "^4.6.0"
 
-hyper-sync-settings@3.0.4:
+hyper-sync-settings@latest:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/hyper-sync-settings/-/hyper-sync-settings-3.0.4.tgz#74d8daa439941f869fdf3bfaf72d82f8a0d2a0b3"
   integrity sha512-UddT6in8I+Pq7t6Ppg0W03nSfq1o6dFZiIlhzCZwwDIHbxwo4Y799qUQ5gw+T73T/qcyO2W8c/wtOUIBmo5Nwg==

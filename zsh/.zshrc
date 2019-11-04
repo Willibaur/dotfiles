@@ -22,10 +22,11 @@ else
 fi
 
 # Load ssh-key with passphrase
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-  ssh-add
-fi
+# if [ -z "$SSH_AUTH_SOCK" ] ; then
+#   eval `ssh-agent -s`
+#   ssh-add
+# fi
+eval `keychain --eval id_rsa`
 
 # Enable compinstall
 zstyle ':completion:*' completer _complete _ignored

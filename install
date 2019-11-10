@@ -17,11 +17,13 @@ git config --global user.name $(whoami)
 
 
 # Development tools
-sudo pacman -S atom calibre dbeaver docker docker-compose eslint
+sudo pacman -S atom calibre dbeaver discord docker docker-compose eslint
 sudo pacman -S firefox firefox-developer-edition flameshot
 sudo pacman -S heroku-cli hunspell hunspell-en_GB hyper keepassxc keychain latte
-sudo pacman -S mysql-clients nodejs-emojione nginx ngrok oh-my-zsh peek pencil slack
-sudo pacman -S tig tmux typescript visual-studio-code-bin watchman yarn
+sudo pacman -S mysql-clients nodejs-emojione nginx ngrok oh-my-zsh
+sudo pacman -S oh-my-zsh peek pencil plasma-browser-integration slack
+sudo pacman -S tig tmux typescript visual-studio-code-bin
+sudo pacman -s watchman whatsapp-natifier yarn
 sudo pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting
 
 

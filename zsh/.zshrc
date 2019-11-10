@@ -41,7 +41,7 @@ SAVEHIST=3000
 setopt autocd
 
 # Enable tmuxinator
-source ~/.tmuxinator/tmuxinator.zsh
+# source ~/.tmuxinator/tmuxinator.zsh
 
 # Enable asdf plugin manager
 . $HOME/.asdf/asdf.sh

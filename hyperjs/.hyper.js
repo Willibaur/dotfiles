@@ -123,14 +123,12 @@ module.exports = {
         commands: [
           "docker restart mysql redis",
           "docker ps",
-          "cd smartpension/api",
-          "rm -rf tmp clients/*/tmp"
         ]
       },
       {
         rule: "tabs",
         commands: [
-          "l",
+          "tput reset",
         ]
       },
     ],

@@ -15,7 +15,6 @@
 *.dll
 *.dmg
 *.exe
-*.gz
 *.iso
 *.jar
 *.log
@@ -24,7 +23,6 @@
 *.so
 *.sql
 *.sqlite
-*.tar
 *.zip
 *.zwc
 **/.expo/

@@ -33,4 +33,3 @@ alias yw="yarn why"
 
 # ZSH
 alias zshconfig='vim ~/.zshrc'
-q

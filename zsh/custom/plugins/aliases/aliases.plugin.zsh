@@ -7,8 +7,9 @@ alias vc='code .'
 # Git
 alias gbdam='git branch | grep -v "master" | xargs git branch -D'
 alias gbdad='git branch | grep -v "develop" | xargs git branch -D'
-alias gbc='gcm && gbdam && gfa && clear && gl'
+alias gbc='gcm; gbdam; gfa; clear; gl'
 alias gbcn="git branch | grep \* | cut -d ' ' -f2"
+alias gce="git commit --allow-empty -m"
 alias gpr="git prune"
 
 

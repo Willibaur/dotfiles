@@ -4,6 +4,9 @@
 alias at='atom .'
 alias vc='code .'
 
+# Docker
+alias dcp='function _dcp(){ CURRENT_PLATFORM=$1 docker-compose up web; };_dcp'
+
 # Git
 alias gbdam='git branch | grep -v "master" | xargs git branch -D'
 alias gbdad='git branch | grep -v "develop" | xargs git branch -D'

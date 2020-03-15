@@ -6,7 +6,7 @@ alias vc='code .'
 
 # Docker
 alias dc="docker-compose"
-alias dcpb="docker-compose build"
+alias dcb="docker-compose build"
 alias dcr="docker-compose run --rm web"
 alias dcu="docker-compose up web"
 alias dcup="function _dcup(){ CURRENT_PLATFORM=$1 docker-compose up web; };_dcup"

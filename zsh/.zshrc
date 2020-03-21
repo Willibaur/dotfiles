@@ -8,7 +8,11 @@ COMPLETION_WAITING_DOTS="true"
 ZSH_DIR=$HOME/dotfiles/zsh
 
 # Set Antigen as ZSH plugin manager
-source ~/antigen.zsh
+# For Linux
+# source ~/antigen.zsh
+
+# For Mac
+source /usr/local/share/antigen/antigen.zsh
 
 export ANTIGEN_COMPDUMP=$HOME/.zcompdump
 
@@ -26,7 +30,9 @@ fi
 #   eval `ssh-agent -s`
 #   ssh-add
 # fi
-eval `keychain --eval id_rsa`
+
+# For Linux
+# eval `keychain --eval id_rsa`
 
 # Enable compinstall
 zstyle ':completion:*' completer _complete _ignored
@@ -49,3 +55,6 @@ setopt autocd
 
 #export PATH="$(yarn global bin):$PATH"
 export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH
+
+# For Mac
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

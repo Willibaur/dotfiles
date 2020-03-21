@@ -22,13 +22,9 @@ windows:
   - API:
       layout: even-horizontal
       panes:
-        - cd smartpension/api && docker restart mysql redis && docker ps
-        - cd smartpension/api && clear && gb
-        - cd smartpension/api && rm -rf tmp && yst
+        - docker ps
 
   - Side-Projects:
       layout: even-horizontal
       panes:
         - cd side-projects && docker ps
-        - cd side-projects && clear && l
-        - cd side-projects && clear

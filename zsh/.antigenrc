@@ -19,7 +19,7 @@ ZSH_CUSTOM=$HOME/dotfiles/zsh/custom
 antigen bundle $ZSH_CUSTOM/themes muse_customized.zsh-theme --no-local-clone
 
 # Load aliases.
-antigen bundle $ZSH_CUSTOM/plugins --no-local-clone
+antigen bundle $ZSH_CUSTOM/plugins/ --no-local-clone
 
 # Tell Antigen that you're done.
 antigen apply

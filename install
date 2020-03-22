@@ -16,29 +16,32 @@ git config --global user.email "YOUR-GITHUB-EMAIL"
 git config --global user.name $(whoami)
 
 
+# Dotfiles
+git clone git@github.com:Willibaur/dotfiles.git ~
+
+
 # Development tools
 sudo pacman -S atom calibre dbeaver discord docker docker-compose eslint
 sudo pacman -S firefox firefox-developer-edition flameshot
 sudo pacman -S heroku-cli hunspell hunspell-en_GB hyper keepassxc keychain latte
-sudo pacman -S mysql-clients nodejs-emojione nginx ngrok oh-my-zsh
+sudo pacman -S mysql-clients nodejs-emojione nginx ngrok
 sudo pacman -S oh-my-zsh peek pencil plasma-browser-integration slack
 sudo pacman -S tig tmux typescript vim visual-studio-code-bin
 sudo pacman -s watchman whatsapp-natifier yarn
 sudo pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting
 
 
-# Increae inotify files number to be watched
+# Increase inotify files number to be watched for Arch Linux
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/50-max_user_watches.conf && sudo sysctl --system
-
-
-# Dotfiles
-git clone git@github.com:Willibaur/dotfiles.git ~
 
 
 # Zsh
 chsh -s `which zsh`
 rm -rf  ~/.zshrc
-ln -fsn ~/dotfiles/zsh/.zshrc ~/.zshrc
+# For Mac
+ln -fsn ~/dotfiles/zsh/.zshrc-linux ~/.zshrc
+# For Mac
+ln -fsn ~/dotfiles/zsh/.zshrc-mac ~/.zshrc
 
 
 # Antigen
@@ -110,11 +113,6 @@ sudo systemctl disable lightdm
 sudo pacman -S gdm
 sudo systemctl enable gdm
 sudo pacman -Rsn lightdm
-
-ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_appfolder.txt ~/gnome_shell_extensions_appfolder.txt
-ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_conf.txt ~/gnome_shell_extensions_conf.txt
-ln -fsn ~/dotfiles/gnome/gnome_shell_extensions_id.txt ~/gnome_shell_extensions_id.txt
-ln -fsn ~/dotfiles/gnome/gtk.css ~/.config/gtk-3.0/gtk.css
 
 
 # Tmux

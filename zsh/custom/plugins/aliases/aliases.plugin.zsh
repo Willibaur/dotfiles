@@ -18,15 +18,14 @@ alias dajs="function _dajs(){ open dash://javascript:{$1}; };_dajs"
 alias dahtml="function _dahtml(){ open dash://html:{$1}; };_dahtml"
 
 # Git
-alias gbdam="git branch | grep -v "master" | xargs git branch -D"
-alias gbdad="git branch | grep -v "develop" | xargs git branch -D"
-alias gbc="gcm; gbdam; gfa; gpr; gl"
+alias gbdac="git branch | grep -v '^*' | xargs git branch -D"
+alias gbc="gcm; gbdac; gfa; gpr; gl"
 alias gbcn="git branch | grep \* | cut -d ' ' -f2"
 alias gce="git commit --allow-empty -m"
 alias gpr="git prune"
 
 # Server
-alias killport="lsof -ti tcp:$1 | xargs kill -9"
+alias sk="function _sk(){ lsof -ti tcp:$1 | xargs kill -9; };_sk"
 
 # Work
 alias ft="rm -rf tmp/ clients/*/tmp"

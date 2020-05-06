@@ -22,6 +22,7 @@ alias gbdac="git branch | grep -v '^*' | xargs git branch -D"
 alias gbc="gcm; gbdac; gfa; gpr; gl"
 alias gbcn="git branch | grep \* | cut -d ' ' -f2"
 alias gce="git commit --allow-empty -m"
+alias gfdf="git log --all -- **/"
 alias gpr="git prune"
 
 # Server

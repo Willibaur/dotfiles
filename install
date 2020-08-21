@@ -23,7 +23,7 @@ git clone git@github.com:Willibaur/dotfiles.git ~
 # Development tools
 sudo pacman -S atom calibre dbeaver discord docker docker-compose eslint
 sudo pacman -S firefox firefox-developer-edition flameshot
-sudo pacman -S heroku-cli hunspell hunspell-en_GB hyper keepassxc keychain latte
+sudo pacman -S heroku-cli hunspell hunspell-en_GB keepassxc keychain latte
 sudo pacman -S mysql-clients nodejs-emojione nginx ngrok
 sudo pacman -S oh-my-zsh peek pencil plasma-browser-integration slack
 sudo pacman -S tig tmux typescript vim visual-studio-code-bin
@@ -78,7 +78,7 @@ mkdir ~/container-volumes ~/open-source ~/side-projects ~/study ~/work
 
 # MySql
 pacman -S mysql-clients
-docker run -d --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v $HOME/container-volumes/mysql/datadir:/var/lib/mysql mysql:5.6
+docker run -d --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v $HOME/container-volumes/mysql/datadir:/var/lib/mysql mysql:5.7
 
 
 # PostgreSql
@@ -87,18 +87,6 @@ docker run -d --name postgres -p 5432:5432 -v $HOME/container-volumes/postgres:/
 
 # Redis
 docker run -d --name redis -p 6379:6379 redis
-
-
-# Settings for HyperJS
-touch ~/.hyper_plugins/.hyper-sync-settings.json
-echo "{
-  "gistId": "",
-  "personalAccessToken" : ""
-}" > .hyper-sync-settings.json
-ln -fsn ~/dotfiles/hyperjs/.hyper.js ~/.hyper.js
-ln -fsn ~/dotfiles/hyperjs/package.json ~/.hyper_plugins/package.json
-ln -fsn ~/dotfiles/hyperjs/node_modules ~/.hyper_plugins/node_modules
-ln -fsn ~/dotfiles/hyperjs/yarn.lock ~/.hyper_plugins/yarn.lock
 
 
 # Yay => AUR Package manager if pacman is not available

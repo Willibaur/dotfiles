@@ -33,8 +33,8 @@ eval `keychain --eval id_rsa`
 zstyle ':completion:*' completer _complete _ignored
 zstyle :compinstall filename '/home/willibaur/.zshrc'
 
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
 
 HISTFILE=~/.histfile
 HISTSIZE=3000
@@ -46,7 +46,6 @@ setopt autocd
 
 # Enable asdf plugin manager
 . $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 
 #export PATH="$(yarn global bin):$PATH"
 export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH

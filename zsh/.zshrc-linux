@@ -44,6 +44,9 @@ setopt autocd
 # Enable tmuxinator
 # source ~/.tmuxinator/tmuxinator.zsh
 
+# Enable aliases
+source ~/dotfiles/zsh/custom/plugins/aliases/aliases.plugin.zsh
+
 # Enable asdf plugin manager
 . $HOME/.asdf/asdf.sh
 

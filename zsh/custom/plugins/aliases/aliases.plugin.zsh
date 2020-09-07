@@ -37,10 +37,8 @@ alias yac="yarn autoclean"
 alias yc="yarn create"
 alias yalh="yarn audit --level high"
 alias yga="yarn global add"
-alias ygr="yarn global remove"
 alias yi="yarn init"
 alias ypr="yarn prune"
-alias yui="yarn upgrade-interactive --latest"
 alias yw="yarn why"
 
 # ZSH

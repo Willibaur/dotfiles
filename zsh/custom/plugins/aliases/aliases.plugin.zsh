@@ -5,17 +5,17 @@ alias at="atom ."
 alias vc="code ."
 
 # Docker
-alias dc="docker-compose"
-alias dcb="docker-compose build"
-alias dcr="docker-compose run --rm web"
-alias dcu="docker-compose up web"
-alias dcbp="function _dcbp(){ CURRENT_PLATFORM=$1 dcb; };_dcbp"
-alias dcrp="function _dcrp(){ CURRENT_PLATFORM=$1 dcr $2;};_dcrp"
-alias dcup="function _dcup(){ CURRENT_PLATFORM=$1 dcu; };_dcup"
-
-# Dash terminal
-alias dajs="function _dajs(){ open dash://javascript:{$1}; };_dajs"
-alias dahtml="function _dahtml(){ open dash://html:{$1}; };_dahtml"
+alias dco="docker container"
+alias dcoexec="docker container exec"
+alias dcols="docker container ls -a"
+alias dcolog="docker container logs"
+alias dcorm="docker container rm -f"
+alias dcorun="docker container run"
+alias dim="docker image"
+alias dimrm="docker image rm -f"
+alias dims="docker images"
+alias dne="docker network"
+# alias dcrp="function _dcrp(){ CURRENT_PLATFORM=$1 dcr $2;};_dcrp"
 
 # Git
 alias gbdac="git branch | grep -v '^*' | xargs git branch -D"

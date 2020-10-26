@@ -229,7 +229,7 @@
 			<key>JavaScript_Online</key>
 			<dict>
 				<key>date</key>
-				<date>2020-06-23T06:27:47Z</date>
+				<date>2020-09-18T11:42:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -382,6 +382,8 @@
 			<true/>
 			<key>name</key>
 			<string>Default</string>
+			<key>placeholder</key>
+			<string>'Math.pow' is restricted from being used. Use the exponentiation operator (**) instead</string>
 			<key>searchSnippets</key>
 			<true/>
 		</dict>

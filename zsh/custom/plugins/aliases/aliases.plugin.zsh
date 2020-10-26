@@ -44,7 +44,6 @@ alias yc="yarn create"
 alias yalh="yarn audit --level high"
 alias yga="yarn global add"
 alias yi="yarn init"
-alias ypr="yarn prune"
 alias yw="yarn why"
 
 # ZSH

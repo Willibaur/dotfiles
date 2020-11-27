@@ -47,6 +47,9 @@ setopt autocd
 # Enable aliases
 source ~/dotfiles/zsh/custom/plugins/aliases/aliases.plugin.zsh
 
+# Linux only aliases
+alias kubectl=microk8s.kubectl
+
 # Enable asdf plugin manager
 . $HOME/.asdf/asdf.sh
 
